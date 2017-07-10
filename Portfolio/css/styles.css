@@ -1,0 +1,241 @@
+
+/*
+Color Pallete
+Charcoal: #373737
+Paper: #f4f4f4
+Silk: #dcd0c0
+Pale Gold: #C0b283
+*/
+
+/*******************************
+  TOP TIER ELEMENT CHANGES
+*******************************/
+
+/*Change all font to Roboto*/
+*{font-family: 'Roboto', sans-serif;}
+
+/*Change background and text color*/
+body{
+	background-color:#f4f4f4;
+	color:#373737;
+}
+
+/*change header color*/
+h1,h2,h3,h4,h5 {
+	color: #373737;
+}
+
+/*Change link colors*/
+a{
+	color: #C0b283;
+}
+
+/*change link hover color*/
+a:hover{
+color: #dcd0c0;
+/*Remove hover underline for back to top*/
+text-decoration: none;
+}
+
+/*Setting hr */
+hr { 
+    color: #C0b283;
+    display: block;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+} 
+  footer {
+      background-color: #373737;
+      padding-top: 25px;
+
+
+
+  }
+
+/*******************************
+  NAV BAR MODIFICATIONS
+*******************************/
+
+/*Remove border*/
+.navbar-default {
+  border: none;
+}
+
+/*Change navbar color */
+.navbar-inverse{
+	background-color: #373737;
+}
+
+/*Setting navbar to full width and to front of z-axis*/
+.navbar{
+	width: 100%;
+	z-index: 100;
+	border-radius: 0px;
+  border-style: none;
+}
+
+/*Change navbar color*/
+.navbar-inverse .navbar-brand{
+  color: #C0b283;
+}
+
+/*Change navbar link color*/
+.navbar-inverse .navbar-nav > li > a {
+    color: #C0b283;
+}
+
+/*Change navbar link hover color*/
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: #C0b283;
+    cursor: default;
+    background-color: #373737;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+/*Change tab pane hover color*/
+ .tab-pane >a:hover {
+  background-color: #373737;
+ }
+    
+/*Increase nav for pane bottom margin*/
+  #navmargin {
+  margin-bottom: 10px;
+  }
+
+/*Indent headings*/
+.page-header{
+	padding-left: 20px;
+}
+
+ /* in case your dealing with a block element apply this to the element itself*/
+.center-block {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
+/* in case your dealing with a inline element apply this to the parent */
+.text-center {
+   text-align:center
+}
+
+/*Remove padding from about header to align with portrait*/
+#aboutHeader{
+margin-top: 0px;
+}
+
+/*Change margin on About title to stack propotionally*/
+@media screen and (max-width: 768px) {
+	#aboutHeader{
+		margin-top: 25px;
+	}
+
+  .text-left-side {
+    text-align: left;
+  }
+}
+
+/*******************************
+/*SOCIAL MEDIA LINKS
+*******************************/
+/*social hover link scale */
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+/*base social link scale*/
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+ /*Change social links color*/ 
+ .social {
+ 	color:#f4f4f4;
+ }
+
+/*  Multicoloured Hover Variations*/
+  #social-gh:hover {
+     color: #fff;
+ }
+ #social-li:hover {
+     color: #0077b5;
+ }
+ #social-em:hover {
+     color: #7B0099 ;
+}
+
+/*  Contact Symbol Colors*/
+  #social-gh-con {
+     color: black;
+ }
+ #social-li-con{
+     color: #0077b5;
+ }
+ #social-em-con{
+     color: #7B0099;
+}
+#social-gm-con{
+    color: #c71610
+}
+/*******************************
+END OF SOCIAL MEDIA LINKS
+*******************************/
+
+
+/*******************************
+MODAL 
+*******************************/
+
+.modal {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.thumbnail {
+    margin-bottom:6px;
+    padding: none;
+    background-color: transparent;
+    border: none;
+}
+
+/*Modal size Change*/
+.modal-lg {
+    width: 900px;
+}
+
+/*padding between images*/
+.padding {
+  padding-bottom: 20px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
