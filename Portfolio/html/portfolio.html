@@ -10,11 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- Call to google fonts for Roboto -->
   <title>Ross Lantz - Portfolio</title>
 </head>
-<body> 
+<body>
 <a name="top"></a>
 <header>
-  <nav class="navbar navbar-inverse" role="navigation" 
-        role="navigation">
+  <nav class="navbar navbar-inverse" id="navmargin">
     <div class="container">
       <div class="navbar-header"> <!-- Collapse Navbar -->
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
@@ -24,12 +23,12 @@
           <span class="icon-bar"></span>
         </button> <!-- collapsed form -->
 
-        <a class="navbar-brand" href="index.html">Ross Lantz</a>
+        <a class="navbar-brand" href="../index.html">Ross Lantz</a>
         </div>
 
         <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">About</a></li>
+          <li><a href="../index.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li class="active"><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -39,7 +38,7 @@
   </nav>
 </header>
 
-<div class="content container">
+<div class="content container wrapper">
    <div class="row">
 
 <div class=" col-xs-12">
@@ -65,43 +64,34 @@ CODING
 ******************** 
 -->
 <div class="tab-content">
-<div class="tab-pane active" role="tabpanel" id="coding"> <!-- coding -->
-     <div class="content container">
-     <div class="row">
-       <section class="col-xs-12 col-sm-6">
-        <h3>GitHub Repository </h3>
-<a href=""></a>
-            <h4><a href="">
-                  </a>
-            </h4>
-        </section>
-        </div>
-    </div>
+  <div class="tab-pane active" role="tabpanel" id="coding"> <!-- coding -->
+       <div class="content container">
+       <div class="row">
+         <section class="col-xs-12 col-sm-6">
+          <a href="https://github.com/Rlantz91">
+            <h3>GitHub Repository </h3>
+           </a>
+          </section>
+          </div>
+      </div>
 
-     <div class="content container">
-     <div class="row">
-       <section class="col-xs-12 col-sm-6">
-        <h3>User Centered Design Examples </h3>
-            <h4><a href="../files/socialapp_signup_0_1.pdf" target="_blank" 
-                  download="socialapp_signup_0_1">Login Screen Example
-                </a>
-            </h4>
-            <h4><a href="../files/Portfolio_Index_beta.pdf" target="_blank" 
-                  download="Portfolio_Layout_Index_Beta">Page layout example
+       <div class="content container">
+       <div class="row">
+         <section class="col-xs-12 col-sm-6">
+          <h3>User Centered Design Examples </h3>
+              <h4><a href="../files/socialapp_signup_0_1.pdf" target="_blank" 
+                    download="socialapp_signup_0_1">Login Screen Example
                   </a>
-            </h4>
-        </section>
-        </div>
-        
-         <div class="row">
-       <section class="col-xs-12 col-sm-6">
-          <br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br>
-        </section>
-        </div>
-    </div> 
-</div> <!-- End of Tab Pane -->
+              </h4>
+              <h4><a href="../files/Portfolio_Index_beta.pdf" target="_blank" 
+                    download="Portfolio_Layout_Index_Beta">Page layout example
+                    </a>
+              </h4>
+          </section>
+          </div>
+          
+      </div> 
+  </div> <!-- End of Tab Pane -->
 
 <!-- 
 ********************
@@ -120,7 +110,7 @@ GRAPHICS
                 <img class="thumbnail img-responsive " 
                     src="../images/Portfolio/graphic_design/lion.jpg">
               </a>
-                <h2 class="modal-title">Lion</h2>
+                <h2>Lion</h2>
             </div>
           </section>
         </div>
@@ -135,7 +125,7 @@ GRAPHICS
                 <img class="thumbnail img-responsive " 
                     src="../images/Portfolio/graphic_design/white_tiger.jpg">
               </a>
-                <h2 class="modal-title">White Tiger</h2>
+                <h2>White Tiger</h2>
             </div>
           </section>
         </div>
@@ -150,7 +140,7 @@ GRAPHICS
                 <img class="thumbnail img-responsive " 
                     src="../images/Portfolio/graphic_design/tiger.jpg">
               </a>
-                <h2 class="modal-title">Tiger</h2>
+                <h2>Tiger</h2>
             </div>
           </section>
         </div>
@@ -162,10 +152,10 @@ GRAPHICS
             <div class="text-center">
             <br>
               <a title="Granite Mountains" href="#">
-                <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/graphic_design/granite_mountains.jpg">
+                <img class="thumbnail img-responsive" id="4" 
+                    src="../images/portfolio/graphic_design/granite_mountains.jpg">
               </a>
-                <h2 class="modal-title">Granite Mountains</h2>
+                <h2>Granite Mountains</h2>
             </div>
           </section>
         </div>
@@ -178,9 +168,9 @@ GRAPHICS
             <br>
               <a title="Risk of Rain" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/graphic_design/risk_of_rain.jpg">
+                    src="../images/portfolio/graphic_design/risk_of_rain.jpg">
               </a>
-                <h2 class="modal-title">Risk of Rain</h2>
+                <h2>Risk of Rain</h2>
             </div>
           </section>
         </div>
@@ -193,9 +183,9 @@ GRAPHICS
             <br>
               <a title="Two Stones Over" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/graphic_design/two_stones_over.jpg">
+                    src="../images/portfolio/graphic_design/two_stones_over.jpg">
               </a>
-                <h2 class="modal-title">Two Stones Over</h2>
+                <h2>Two Stones Over</h2>
             </div>
           </section>
         </div>
@@ -217,40 +207,40 @@ PHOTOGRAPHY
             <br>
               <a title="Sun Bathing" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/photography/sun_bathing.jpg">
+                    src="../images/portfolio/photography/sun_bathing.jpg">
               </a>
-                <h2 class="modal-title">Sun Bathing</h2>
+                <h2>Sun Bathing</h2>
             </div>
           </section>
         </div>
       <!-- End of Sun Bathing -->      
 
 
-      <!-- Class Transition -->
+      <!-- Harvest -->
         <div class="row row-centered">
           <section class="col-xs-12 col-sm-6 padding col-centered">
             <div class="text-center">
             <br>
-              <a title="Granite Mountains" href="#">
+              <a title="Harvest" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/photography/class_transition.jpg">
+                    src="../images/portfolio/photography/harvest.jpg">
               </a>
-                <h2 class="modal-title">Class Transition</h2>
+                <h2>Harvest</h2>
             </div>
           </section>
         </div>
       <!-- End of Class Transition -->
 
-       <!-- Class Transition -->
+       <!-- Harvest -->
         <div class="row row-centered">
           <section class="col-xs-12 col-sm-6 padding col-centered">
             <div class="text-center">
             <br>
               <a title="Class Transition" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/photography/class_transition.jpg">
+                    src="../images/portfolio/photography/class_transition.jpg">
               </a>
-                <h2 class="modal-title">Class Transition</h2>
+                <h2>Class Transition</h2>
             </div>
           </section>
         </div>
@@ -263,9 +253,9 @@ PHOTOGRAPHY
             <br>
               <a title="Paying for Parking" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/photography/paying_for_parking.jpg">
+                    src="../images/portfolio/photography/paying_for_parking.jpg">
               </a>
-                <h2 class="modal-title">Paying for Parking</h2>
+                <h2>Paying for Parking</h2>
             </div>
           </section>
         </div>
@@ -278,9 +268,9 @@ PHOTOGRAPHY
             <br>
               <a title="Musing" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/photography/musing.jpg">
+                    src="../images/portfolio/photography/musing.jpg">
               </a>
-                <h2 class="modal-title">Musing</h2>
+                <h2>Musing</h2>
             </div>
           </section>
         </div>
@@ -293,9 +283,9 @@ PHOTOGRAPHY
             <br>
               <a title="Reading" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/photography/reading.jpg">
+                    src="../images/portfolio/photography/reading.jpg">
               </a>
-                <h2 class="modal-title">Reading</h2>
+                <h2>Reading</h2>
             </div>
           </section>
         </div>
@@ -308,9 +298,9 @@ PHOTOGRAPHY
             <br>
               <a title="Study" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/photography/study.jpg">
+                    src="../images/portfolio/photography/study.jpg">
               </a>
-                <h2 class="modal-title">Study</h2>
+                <h2>Study</h2>
             </div>
           </section>
         </div>
@@ -323,9 +313,9 @@ PHOTOGRAPHY
             <br>
               <a title="Smiling" href="#">
                 <img class="thumbnail img-responsive " 
-                    src="../images/Portfolio/photography/smiling.jpg">
+                    src="../images/portfolio/photography/smiling.jpg">
               </a>
-                <h2 class="modal-title">Smiling</h2>
+                <h2>Smiling</h2>
             </div>
           </section>
         </div>
@@ -334,25 +324,19 @@ PHOTOGRAPHY
   </div> <!-- End of photography -->
 
 
-  </div><!-- row -->   
+</div><!-- row -->   
+
 </div><!-- content container -->
 
-      <!-- MODAL -->
-      <div tabindex="-1" class="modal fade" id="myModal">
-        <div class="modal-dialog modal-lg text-center" data-dismiss="modal">
-          <div class="modal-content">
-            <div class="modal-body">
-              <h3 class="modal-title">Heading</h3>
-            </div>
-          </div>
-        </div>
-      </div> <!-- END OF MODAL -->
-        
-
-<br>
-<br>
-<br>
-<br>
+ <!-- MODAL -->
+ <div tabindex="-1" class="modal fade" id="myModal">
+   <div class="modal-dialog modal-lg text-center" data-dismiss="modal">
+     <div class="modal-content">
+       <div class="modal-body">
+       </div>
+     </div>
+   </div>
+ </div> <!-- END OF MODAL -->
 </div>
   <footer class="container-fluid">
     <nav class="navbar navbar-inverse ">
@@ -372,9 +356,4 @@ PHOTOGRAPHY
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/script.js"></script>
 </body>
-
-
 </html>
-
-
-

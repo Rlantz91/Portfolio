@@ -14,10 +14,15 @@ Pale Gold: #C0b283
 /*Change all font to Roboto*/
 *{font-family: 'Roboto', sans-serif;}
 
+html{
+  height: 100%;
+}
+
 /*Change background and text color*/
 body{
 	background-color:#f4f4f4;
 	color:#373737;
+  height:100%;
 }
 
 /*change header color*/
@@ -50,11 +55,10 @@ hr {
 } 
   footer {
       background-color: #373737;
-      padding-top: 25px;
-
-
-
+      position: relative;
+      /*padding-top: 25px;*/
   }
+
 
 /*******************************
   NAV BAR MODIFICATIONS
@@ -76,6 +80,14 @@ hr {
 	z-index: 100;
 	border-radius: 0px;
   border-style: none;
+  margin-bottom: 0px;
+}
+
+/*Setting navbar footer to bottom*/
+   .navbar-static-bottom {
+  @extend .navbar-fixed-bottom;
+  position: relative;
+  border-width: 1px 1px 0;
 }
 
 /*Change navbar color*/
@@ -104,7 +116,7 @@ hr {
     
 /*Increase nav for pane bottom margin*/
   #navmargin {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   }
 
 /*Indent headings*/
@@ -238,4 +250,8 @@ MODAL
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+}
+
+.wrapper{
+  min-height: 100%;
 }

@@ -1,4 +1,17 @@
 $(document).ready(function() {
+
+// Javascript to enable link to tab
+var url = document.location.toString();
+if (url.match('#')) {
+    $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+} 
+
+// Change hash for page-reload
+$('.nav-tabs a').on('shown.bs.tab', function (e) {
+    window.location.hash = e.target.hash;
+    window.scrollTo(0, 0);
+})
+
 $('.thumbnail').click(function(){
       $('.modal-body').empty();
   	var title = $(this).parent('a').attr("title");
@@ -7,22 +20,6 @@ $('.thumbnail').click(function(){
   	$('#myModal').modal({show:true});
 });
 
-
-
 $('#myModal').modal('hide');
+
 });
-
-// Javascript to enable link to tab
-var url = document.location.toString();
-if (url.match('#')) {
-    $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
-} 
-// Change hash for page-reload
-$('.nav-tabs a').on('shown.bs.tab', function (e) {
-    window.location.hash = e.target.hash;
-
-})
-
-.click(){
-  window.scrollTo(0, 0); 
-}
